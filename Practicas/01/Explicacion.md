@@ -1,6 +1,6 @@
 # Primera práctica. Segunda parte.
 
-## NOT
+# NOT
 
 | in  | out |
 |:---:|:---:|
@@ -27,7 +27,7 @@ En todos los escenarios, la salida será opuesta a las entradas, lo que nos gara
 | 0   | 0   | 1   |
 | 1   | 1   | 0   |
 
-## AND
+# AND
 
 | a   | b   | out |
 |:---:|:---:|:---:|
@@ -45,7 +45,7 @@ Para la compuerta AND, podemos notar que es el inverso de la compuerta NAND (obv
 | 1   | 0   | 1   | 0       |
 | 1   | 1   | 0   | 1       |
 
-## OR
+# OR
 
 | a   | b   | out |
 |:---:|:---:|:---:|
@@ -56,7 +56,7 @@ Para la compuerta AND, podemos notar que es el inverso de la compuerta NAND (obv
 
 Como podemos observar en la tabla de verdad, la compuerta OR es muy parecida a la compuerta NAND, excepto que los valores de salida para $(0,0)$ y $(1,1)$ están "intercambiados". Nuestra solución es tan simple como negar las entradas de la compuerta NAND, de modo que la entrada $(0,0)$ se comporte como la entrada $(1,1)$ y la entrada $(1,1)$ como la $(0,0)$. Es importante notar que las demás combinaciones no se ven afectadas, ya que solo intercambian valor, pero el resultado de salida ya era el mismo en ambos casos.
 
-## XOR
+# XOR
 
 Para la compuerta XOR, inicialmente observamos que es el resultado de una operación AND entre la compuerta NAND y la compuerta OR, manteniendo únicamente las entradas donde hay valores comunes, como por ejemplo $(1,0)$ y $(0,1)$, para así obtener la compuerta XOR deseada.
 
@@ -67,7 +67,7 @@ Para la compuerta XOR, inicialmente observamos que es el resultado de una operac
 | 1   | 0   | 1   | 1    | 1   |
 | 1   | 1   | 1   | 0    | 0   |
 
-## MUX
+# MUX
 
 El funcionamiento del multiplexor (MUX) permite seleccionar cuál de las entradas, "a" o "b", se reflejará en la salida, utilizando un selector al que en este caso llamamos "sel".
 
@@ -84,7 +84,7 @@ El funcionamiento del multiplexor (MUX) permite seleccionar cuál de las entrada
 
 Cuando "sel" es cero, la entrada reflejada es "a", mientras que si es uno, la entrada reflejada es "b". Para lograr esta funcionalidad, primero se niega la entrada "sel" para determinar cuándo es cero. Luego, se utilizan dos compuertas AND que tienen como entradas "a" y "notSel" para la primera, y "b" y "sel" para la segunda. Finalmente, se utiliza una compuerta OR para verificar si alguna de las dos compuertas AND ha reflejado un 1.
 
-## DMUX
+# DMUX
 
 La compuerta Mux tiene como entradas "in" y "sel" y se encarga de decidir que salida será activada de esta forma:
 
@@ -97,24 +97,24 @@ La compuerta Mux tiene como entradas "in" y "sel" y se encarga de decidir que sa
 
 Para conseguir esta funcionalidad se hizo un procedimiento muy parecido al Mux, sin embargo en este caso las compuertas And comparan "a","sel" y "a","notSel" respectivamente, y la salida de cada And son "Out1" y "Out2" respectivamente.
 
-## OR16
+# OR16
 
 Después de haber creado previamente la compuerta OR, esta resulta ser particularmente simple y directa. Sus entradas consisten en un vector "a" de tamaño 16 y un vector "b" del mismo tamaño. Luego, se comparan una por una las posiciones de los vectores, por ejemplo: "Or(a=a[0], b=b[0], out=out[0])". Finalmente, como se mostró en el ejemplo anterior, la salida, denominada "out", es un vector de 16 valores.
 
-## AND16
+# AND16
 
 Esta situación es muy parecida a la anterior, con las mismas entradas y salidas. La única diferencia radica en que en lugar de tratarse de una serie de 16 compuertas OR, ahora tenemos una serie de 16 compuertas AND que comparan cada posición de los dos vectores de entrada. Por ejemplo: "And(a=a[0], b=b[0], out=out[0])".
 
-## MUX16
+# MUX16
 
 En esta situación, una vez más, necesitamos replicar la compuerta original 16 veces, en este caso, la compuerta Mux. Las entradas consisten en dos vectores de 16 valores, "a" y "b", y un selector "sel". Luego, se repetirá la compuerta Mux 16 veces para cada una de las entradas de los vectores. Por ejemplo: "Mux(a=a[0], b=b[0], sel=sel, out=out[0])".
 
-## MUX4WAY16
+# MUX4WAY16
 
 Para realizar el MUX4W16, primero observamos la tabla de verdad de la compuerta:
 
 
-## DMUX4WAY
+# DMUX4WAY
 
 
 Para realizar el DMux4Way, primero observamos la tabla de verdad de la compuerta:
@@ -155,7 +155,7 @@ Que es precisamente un demultiplexor sencillo. Al aplicarlo, aún requerimos los
 
 Teniendo así, nuestro demultiplexor.
 
-## DMUX8WAY
+# DMUX8WAY
 
 Primero, observemos la tabla de verdad de nuestro demultiplexor.
 
@@ -199,7 +199,7 @@ Como podemos observar, esto corresponde a un demultiplexor básico. Para obtener
 
 Obteniendo así, nuestro Dmux8Way.
 
-## MUX4W16
+# MUX4W16
 
 Primero, haciendo la tabla de verdad del circuito, tenemos
 
@@ -234,7 +234,7 @@ Al finalizar este proceso, obtendríamos la salida $a$ o $b$ y la salida $c$ o $
 
 Por lo que nuesto multiplexor de 4ways estaría hecho. Para poderlo hacerlo con 16 entradas, simplemente aplicamos esto en Mux16 en vez de usar Mux.
 
-## MUX8W16
+# MUX8W16
 
 Para este, podemos observar la tabla de datos
 
