@@ -19,6 +19,8 @@ Primero tendremos que empezar con los chips basicos como medio sumador, sumador 
 
 **Desarrollo del Proyecto:** Empezamos construyendo chips básicos como registros de 1 bit y registros de 16 bits, que formarán parte de la base para construir la memoria RAM, empezamos a utilizar los registros construidos para ir ensamblando las unidades de memoria RAM progresivamente más grande, desde RAM8 hasta una RAM16K, cada una con capacidades de almacenamiento incrementadas. Empezamos a utilizar las compuertas logicas y registros para ir implementando correctamente la funcionalidad de nuestro almacenamiento y dirrecionamiento de la memoria RAM. Para concluir, hacemos pruebas exhaustivas de cada chip construido utilizando los scripts de prueba proporcionados para garantizar el correcto funcioanmiento y cumplimiento de todo lo establecido.
 
+### 2. Explique las principales diferencias entre la lógica aritmética y la lógica secuencial.
+
 
 
 
