@@ -21,6 +21,15 @@ Primero tendremos que empezar con los chips basicos como medio sumador, sumador 
 
 ### 2. Explique las principales diferencias entre la lógica aritmética y la lógica secuencial.
 
+| Característica           | Lógica Aritmética                                  | Lógica Secuencial                                |
+|--------------------------|----------------------------------------------------|---------------------------------------------------|
+| Tipo de Operaciones      | Operaciones aritméticas y lógicas básicas.        | Secuencia de estados y control de flujo.         |
+| Procesamiento de Datos   | Realiza cálculos y manipulaciones instantáneas.    | Retiene información a lo largo del tiempo.       |
+| Elementos Principales    | Unidades Aritmético-Lógicas (ALU).                | Flip-flops, registros, máquinas de estados finitos.|
+| Ejemplo de Aplicaciones  | Suma, resta, multiplicación, división, operaciones lógicas. | Circuitos de control, máquinas de estados finitos. |
+| Características Clave    | Operaciones en paralelo.                           | Cambio de estado basado en condiciones o señales de control. |
+
+
 
 
 
