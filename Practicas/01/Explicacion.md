@@ -253,7 +253,7 @@ Para este, podemos observar la tabla de datos
 Podemos notar la similitud con el Mux4W16, así que intentamos aplicar el mismo enfoque, dividiendo en dos grupos y luego aplicando un multiplexor a la salida. Al dividir en 2 grupos, obtenemos grupos de 4 elementos, por lo que utilizamos un Mux4W16 en cada uno de los grupos, $abcd$ y $efgh$. Al hacerlo, obtenemos dos salidas, v1 y v2, que podemos dirigir a través de un multiplexor normal de 16 entradas. El resultado es la salida del Mux7W16.
 
 
-Preguntas Adicionales 
+# Preguntas Adicionales 
 
 1-¿qué consideraciones importantes debe tener en cuenta para trabajar con Nand2Tetris?
 
