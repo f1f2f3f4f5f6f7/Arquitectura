@@ -1,0 +1,9 @@
+CHIP Inc16 {
+    IN in[16];
+    OUT out[16];
+
+    PARTS:
+    Add16(a = true, b = true, out = m2);
+    Not16(in = m2, out = one);
+    Add16(a = in, b = one, out=out);
+}	
