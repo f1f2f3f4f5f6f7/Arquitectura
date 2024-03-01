@@ -29,7 +29,46 @@ Primero tendremos que empezar con los chips basicos como medio sumador, sumador 
 | Ejemplo de Aplicaciones  | Suma, resta, multiplicación, división, operaciones lógicas. | Circuitos de control, máquinas de estados finitos. |
 | Características Clave    | Operaciones en paralelo.                           | Cambio de estado basado en condiciones o señales de control. |
 
+### Explicación de los chips:
 
+HalfAdder:
+El HalfAdder realiza la suma de dos números binarios de un solo bit y produce dos salidas: una para la suma y otra para el acarreo generado. Esta operación se logra utilizando una compuerta Xor y una compuerta And entre las entradas.
+
+FullAdder:
+El FullAdder es un circuito más avanzado que el HalfAdder y se utiliza para sumar tres números binarios de un solo bit. Produce dos salidas: la suma de los tres bits de entrada y el acarreo resultante. Se construye utilizando múltiples HalfAdders y una compuerta Or para combinar los acarreos.
+
+Add16:
+El chip Add16 suma dos números de 16 bits utilizando múltiples FullAdders conectados en cascada. Cada FullAdder suma un par de bits correspondientes de los dos números y considera el acarreo de la suma anterior.
+
+Inc16:
+El chip Inc16 suma 1 al número binario de 16 bits de entrada utilizando una serie de sumadores de un solo bit conectados en cascada.
+
+ALU:
+La ALU realiza operaciones aritméticas y lógicas en datos binarios. Utiliza compuertas lógicas y sumadores para ejecutar operaciones como suma, resta, AND, OR, y NOT.
+
+Bit:
+El chip Bit selecciona entre la salida anterior y la entrada actual mediante un multiplexor y luego guarda la selección utilizando un Data Flip Flop.
+
+Register:
+El Register almacena 16 bits en la memoria utilizando 16 bits construidos anteriormente.
+
+RAM8:
+La RAM8 es una memoria de 8x16 que utiliza 8 registros de 16 bits cada uno, construidos con chips Register.
+
+RAM64:
+La RAM64 es una memoria de 64 registros de 16 bits, construida utilizando 8 chips RAM8.
+
+RAM512:
+La RAM512 es una memoria de 512 registros de 16 bits, construida utilizando 8 chips RAM64.
+
+RAM4k:
+La RAM4k es una memoria de 4000 registros de 16 bits, construida utilizando 8 chips RAM512.
+
+RAM16k:
+La RAM16k es una memoria de 16k registros de 16 bits, construida utilizando 4 chips RAM4k.
+
+PC:
+El PC (Contador de Programa) primero incrementa la salida mediante un chip Inc16, luego selecciona entre las posibles entradas utilizando un multiplexor y finalmente guarda la selección utilizando un Register.
 
 
 
