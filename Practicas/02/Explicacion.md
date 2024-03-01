@@ -29,7 +29,7 @@ Primero tendremos que empezar con los chips basicos como medio sumador, sumador 
 | Ejemplo de Aplicaciones  | Suma, resta, multiplicación, división, operaciones lógicas. | Circuitos de control, máquinas de estados finitos. |
 | Características Clave    | Operaciones en paralelo.                           | Cambio de estado basado en condiciones o señales de control. |
 
-### Explicación de los chips:
+# Explicación de los chips:
 
 ## HalfAdder:
 El HalfAdder realiza la suma de dos números binarios de un solo bit y produce dos salidas: una para la suma y otra para el acarreo generado. Esta operación se logra utilizando una compuerta Xor y una compuerta And entre las entradas.
