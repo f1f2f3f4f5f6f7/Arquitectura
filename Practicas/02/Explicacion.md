@@ -70,7 +70,32 @@ La RAM16k es una memoria de 16k registros de 16 bits, construida utilizando 4 ch
 ## PC:
 El PC (Contador de Programa) primero incrementa la salida mediante un chip Inc16, luego selecciona entre las posibles entradas utilizando un multiplexor y finalmente guarda la selección utilizando un Register.
 
+# BONUS
 
+## ¿Qué tipo de unidades aritmético lógicas existen?
+
+# Tipos de Unidades Aritmético Lógicas (ALU)
+
+Las Unidades Aritmético Lógicas (ALU) son componentes fundamentales de las CPU (Unidades de Procesamiento Central) de las computadoras. Varían en complejidad y características según el diseño de la CPU y su aplicación. A continuación, se describen algunos tipos comunes de ALU:
+
+- **ALU de 4 bits**: Es uno de los tipos más simples de ALU y puede realizar operaciones en datos de hasta 4 bits de longitud.
+
+- **ALU de 8 bits**: Similar al ALU de 4 bits, pero puede manejar datos de hasta 8 bits de longitud, lo que lo hace más versátil y capaz de realizar operaciones más complejas.
+
+- **ALU de 16 bits**: Diseñado para manejar datos de 16 bits, este tipo de ALU se encuentra comúnmente en procesadores más antiguos y en sistemas embebidos de baja potencia.
+
+- **ALU de 32 bits y 64 bits**: Son los tipos de ALU más comunes en las CPU modernas para computadoras de propósito general. Pueden manejar datos de 32 o 64 bits de longitud, lo que les permite realizar operaciones más complejas y manejar una mayor cantidad de datos en paralelo.
+
+- **ALU con soporte SIMD**: SIMD (Single Instruction, Multiple Data) es una técnica de procesamiento que permite realizar una operación en múltiples datos simultáneamente. Las ALU con soporte SIMD están diseñadas para manejar este tipo de operaciones y son comunes en CPUs utilizadas en tareas intensivas en computación, como gráficos, procesamiento de señales y procesamiento de imágenes.
+
+- **ALU especializadas**: Algunas CPU pueden incluir ALU especializadas para tareas específicas, como el procesamiento de punto flotante o el cifrado/descifrado de datos.
+
+
+la cantidad exacta de unidades aritmético lógicas (ALU) que existen depende de la diversidad de diseños de procesadores y circuitos integrados que se han desarrollado a lo largo del tiempo. Cada fabricante de CPU puede implementar su propia versión de la ALU, adaptándola a sus necesidades específicas y a las demandas del mercado.
+
+Por ejemplo, en la actualidad, los principales fabricantes de CPU como Intel, AMD, ARM y otros, desarrollan sus propias ALU para sus respectivas líneas de procesadores, y dentro de cada empresa, puede haber múltiples diseños de ALU para diferentes modelos de procesadores.
+
+Además, con los avances en la tecnología y la investigación en arquitectura de computadoras, se han propuesto y desarrollado varios diseños de ALU especializadas para aplicaciones específicas, como el procesamiento de gráficos, la inteligencia artificial, el procesamiento de señales, entre otros.
 
 
 
