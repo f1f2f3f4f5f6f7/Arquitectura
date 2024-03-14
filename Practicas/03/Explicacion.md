@@ -35,27 +35,27 @@ cada uno se enfoca en aspectos diferentes de un sistema computacional. La arquit
 Es crucial tener en cuenta la arquitectura de software al diseñar sistemas computacionales, ya que influye en la eficiencia, la mantenibilidad, la escalabilidad y otras características importantes del sistema. Por lo tanto, aunque la arquitectura computacional y la arquitectura del sistema son fundamentales, no se puede ignorar la importancia de la arquitectura de software en el desarrollo de sistemas informáticos robustos y eficientes.
 
 
-## Proyecto 4: 
-# Descripción de los programas
+# Proyecto 4: 
+## Descripción de los programas
 Se presenta una breve explicación sobre la construcción y el funcionamiento básico de los programas del proyecto 4 de nand2tetris.
 
-# Mult:
+## Mult:
 Este programa utiliza las 16 palabras principales de la RAM (RAM[0]...RAM[15]) para calcular R0*R1 y almacenar el resultado en R2. El cálculo se realiza mediante una secuencia de instrucciones que multiplican los valores contenidos en R0 y R1, guardando el resultado en R2. Esta operación es esencial en la computadora Hack y se emplea para diversas tareas como cálculos matemáticos y manipulación de datos.
 
-# Fill:
+## Fill:
 Este programa demuestra cómo manipular los dispositivos de pantalla y teclado a nivel básico. Monitoriza constantemente la entrada del teclado y oscurece la pantalla (poniendo cada píxel en negro) mientras una tecla está siendo presionada.
 
-## Proyecto 5: 
-# Descripción de los chips
+# Proyecto 5: 
+## Descripción de los chips
 Se proporciona una breve explicación sobre la construcción y el funcionamiento de los chips del proyecto 5 de nand2tetris.
 
-# Memory:
+## Memory:
 Este chip facilita las operaciones básicas de lectura y escritura en la memoria de la computadora Hack. Selecciona la ubicación de memoria donde cargar la orden (RAM16K, pantalla o teclado) utilizando un DMux4Way. Luego, utiliza un Ram16k para almacenar la entrada y dirigirla a la pantalla y al teclado, y finalmente, emplea un Mux4Way16 para enviar la salida adecuada.
 
-# CPU:
+## CPU:
 La CPU de Hack consta de una ALU, registros A y D, y un contador de programa PC. Ejecuta las instrucciones del lenguaje de máquina Hack, refiriéndose a los registros integrados en la CPU y la posición de memoria externa apuntada por A.
 
-# Computer:
+## Computer:
 La computadora HACK se compone de la CPU, la ROM y la RAM. Al reiniciar, ejecuta el programa almacenado en la memoria ROM. Si se activa el reset, se reinicia la ejecución del programa actual. Para iniciar un programa, el usuario debe presionar el botón de reset, lo que permite la interacción con la computadora a través del teclado y la visualización de resultados en la pantalla.
 
 
