@@ -33,33 +33,33 @@ En este proyecto, se buscó adoptar o idear una idea de aplicación en forma de 
 
 
 
-## Snake
+# Snake
 
-# Main
+## Main
 
 En el archivo Main.jack se define la clase principal (Main), que contiene el método main(). Aquí se crea una instancia de la clase SnakeGame llamada game, y luego se invoca el método run() de la instancia game para ejecutar el juego. Una vez completada la ejecución del juego, se llama al método dispose() para llevar a cabo cualquier limpieza o liberación de recursos necesaria, devolviendo el control.
 
-# RandSeed
+## RandSeed
 
 El archivo RandSeed.jack define la clase RandSeed que contiene el método getSeed() para obtener una semilla aleatoria. Además, muestra un mensaje al usuario indicando que presione una tecla para comenzar, y luego utiliza un bucle para esperar a que el usuario realice dicha acción. La semilla se incrementa cada vez que se ejecuta el bucle y se reinicia cuando alcanza un valor límite, seguido de la limpieza de la pantalla y la devolución de la semilla.
 
-# Random
+## Random
 
 La clase Random, definida en el archivo Random.jack, tiene un campo estático seed y métodos para manipular y generar números aleatorios. Incluye el método setSeed(), que establece la semilla para la generación de números aleatorios. El método rand() genera un número aleatorio en el rango de 0 a 32767 utilizando una fórmula específica, mientras que el método randRange() genera un número aleatorio en un rango específico utilizando la semilla y operaciones de bits.
 
-# Snake
+## Snake
 
 El archivo Snake.jack define la clase Snake, que representa la serpiente en el juego. Sus atributos incluyen referencias al juego (SnakeGame), la posición de la cabeza, longitud, dirección y un historial de movimientos. El constructor inicializa la serpiente y dibuja su posición inicial. Sus métodos incluyen funciones para gestionar el movimiento, crecimiento, dibujo y verificación de colisiones.
 
-# SnakeGame
+## SnakeGame
 
 La clase SnakeGame, representada en el archivo SnakeGame.jack, es responsable de manejar el juego. Contiene instancias de Snake y SnakeGrid. El método run() maneja el bucle principal del juego, procesa la entrada del teclado, mueve la serpiente y actualiza el estado del juego. Además, gestiona niveles, dibuja y actualiza la interfaz de usuario, y maneja eventos de pausa o finalización del juego.
 
-# SnakeGrid
+## SnakeGrid
 
 El archivo SnakeGrid.jack define la clase SnakeGrid, que representa la cuadrícula del juego. Se utiliza para gestionar la posición de la serpiente y la ubicación de la comida. Sus métodos incluyen funciones para colocar y dibujar la comida, inicializar y gestionar la cuadrícula, y verificar ocupación y colisiones. También proporciona métodos para dibujar la interfaz de usuario, como puntuación, nivel y mensajes de estado.
 
-## Square
+# Square
 
 
 - Main.jack: Este archivo actúa como el punto de entrada del juego. En su función main(), se crea una instancia de SquareGame, se inicia el juego con el método run(), y luego se liberan los recursos con dispose().
